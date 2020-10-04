@@ -9,7 +9,7 @@ Select CTE.*, POH.[ShipDate], POH.[PurchaseOrderID]
 From [Purchasing].[PurchaseOrderHeader] POH
 Join CTE on POH.EmployeeID=CTE.EmployeeID
 AND CTE.MaxTotalDue=POH.TotalDue
-ORDER BY EmployeeID, ShipDate desc
+ORDER BY poh.EmployeeID, poh.ShipDate desc
 
 
 
